@@ -7,6 +7,7 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 20px; }
         .container { max-width: 900px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
         h1 { color: #38bdf8; font-size: 1.8rem; margin-bottom: 5px; }
         p.subtitle { color: #94a3b8; margin-top: 0; }
         .audit-btn { background: #38bdf8; color: #0f172a; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; margin-top: 15px; }
@@ -15,20 +16,54 @@
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
         th { background: #0f172a; color: #38bdf8; }
         .badge { background: #065f46; color: #34d399; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
-        .footer { margin-top: 30px; text-align: center; color: #64748b; font-size: 0.85rem; }
+        
+        /* Footer & Tooltip Styling */
+        .footer { margin-top: 40px; text-align: center; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; padding-top: 20px; line-height: 1.6; }
+        .footer-project { color: #94a3b8; font-weight: 600; letter-spacing: 0.5px; }
+        .tooltip-container { position: relative; display: inline-block; cursor: pointer; color: #38bdf8; font-weight: 500; }
+        .tooltip-container .tooltip-text {
+            visibility: hidden;
+            width: 320px;
+            background-color: #0f172a;
+            color: #f8fafc;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 12px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: 1px solid #38bdf8;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .tooltip-container:hover .tooltip-text { visibility: visible; opacity: 1; }
+
+        /* Google Translate Widget Styling Customization */
+        .goog-te-combo { background: #0f172a; color: #38bdf8; border: 1px solid #334155; padding: 6px; border-radius: 4px; font-family: inherit; }
+        .goog-logo-link { display: none !important; }
+        .goog-te-gadget { color: transparent !important; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>GreenNet-Mobile Telemetry Portal</h1>
-        <p class="subtitle">Eco-Friendly Interface Selection & Memory-Efficient Architecture</p>
-        <p><strong>Principal Author:</strong> Humayun Rashid (Research Fellow, Islamic University, Kushtia, Bangladesh)</p>
+        <div class="header-flex">
+            <div>
+                <h1>GreenNet-Mobile</h1>
+                <p class="subtitle">Eco-Friendly Interface Selection & Memory-Efficient Architecture</p>
+            </div>
+            <!-- Tap2Translate Widget Container -->
+            <div id="google_translate_element"></div>
+        </div>
         
         <hr style="border-color: #334155; margin: 20px 0;">
 
         <!-- Interactive Audit Section -->
         <div style="background: #0f172a; padding: 20px; border-radius: 8px; border: 1px dashed #38bdf8;">
-            <h3 style="margin-top: 0; color: #38bdf8;">📱 Interactive Device Energy Audit</h3>
+            <h3 style="margin-top: 0; color: #38bdf8;">📱 Interactive Device Energy Audit ($P_i$)</h3>
             <p style="color: #94a3b8; font-size: 0.95rem;">Curious how much battery and energy your specific smartphone could save with our zero-GPS framework? Click below to run a live heuristic diagnostic scan on your current device.</p>
             <button class="audit-btn" onclick="runDeviceAudit()">🚀 Run Live Device Energy Audit</button>
             <div id="audit-results"></div>
@@ -71,9 +106,27 @@
         </table>
 
         <div class="footer">
-            &copy; 2026 GreenNet-Mobile Research Project. Hosted on business83.
+            <div class="footer-project">GreenNet-Mobile Research Project</div>
+            <div>&copy; 2026 
+                <span class="tooltip-container">
+                    Humayun Rashid
+                    <span class="tooltip-text">Research Fellow, Islamic University, Kushtia, Bangladesh</span>
+                </span>
+            </div>
         </div>
     </div>
+
+    <!-- Google Translate Script Initialization -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'bn,en,es,fr,ar,zh-CN,hi,de,ja',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script src="audit.js"></script>
 </body>
