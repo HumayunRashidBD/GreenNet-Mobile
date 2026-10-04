@@ -3,79 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenNet-Mobile | Telemetry & Audit Logs</title>
+    <title>GreenNet-Mobile | Live Telemetry & Device Audit Portal</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f7f6; color: #333; margin: 0; padding: 40px; }
-        .container { max-width: 900px; margin: auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #2e7d32; margin-top: 0; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #2e7d32; text-decoration: none; font-weight: bold; }
-        .back-link:hover { text-decoration: underline; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        h1 { color: #38bdf8; font-size: 1.8rem; margin-bottom: 5px; }
+        p.subtitle { color: #94a3b8; margin-top: 0; }
+        .audit-btn { background: #38bdf8; color: #0f172a; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; margin-top: 15px; }
+        .audit-btn:hover { background: #7dd3fc; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
-        th { background: #f9fbf9; color: #2e7d32; }
-        .status-badge { background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 12px; font-weight: bold; font-size: 12px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
+        th { background: #0f172a; color: #38bdf8; }
+        .badge { background: #065f46; color: #34d399; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+        .footer { margin-top: 30px; text-align: center; color: #64748b; font-size: 0.85rem; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="../" class="back-link">&larr; Back to Main Portal</a>
-        <h1>Live Telemetry & Test History</h1>
-        <p>Reviewing historical verification runs and aggregate environmental impact metrics for <strong>GreenNet-Mobile</strong>.</p>
+        <h1>GreenNet-Mobile Telemetry Portal</h1>
+        <p class="subtitle">Eco-Friendly Interface Selection & Memory-Efficient Architecture</p>
+        <p><strong>Principal Author:</strong> Humayun Rashid (Research Fellow, Islamic University, Kushtia, Bangladesh)</p>
+        
+        <hr style="border-color: #334155; margin: 20px 0;">
 
+        <!-- Interactive Audit Section -->
+        <div style="background: #0f172a; padding: 20px; border-radius: 8px; border: 1px dashed #38bdf8;">
+            <h3 style="margin-top: 0; color: #38bdf8;">📱 Interactive Device Energy Audit</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem;">Curious how much battery and energy your specific smartphone could save with our zero-GPS framework? Click below to run a live heuristic diagnostic scan on your current device.</p>
+            <button class="audit-btn" onclick="runDeviceAudit()">🚀 Run Live Device Energy Audit</button>
+            <div id="audit-results"></div>
+        </div>
+
+        <h3 style="margin-top: 30px;">Historical Verification Runs</h3>
         <table>
             <thead>
                 <tr>
                     <th>Run #</th>
                     <th>Timestamp (UTC)</th>
-                    <th>Current Reduction</th>
+                    <th>Energy Reduction</th>
                     <th>Energy Saved</th>
-                    <th>CO2 Offset</th>
                     <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>#10 (Latest)</td>
-                    <td>2026-10-03T22:19:50.171346Z</td>
+                    <td>2026-10-03T22:19:50Z</td>
                     <td>82.2%</td>
                     <td>13.152 Wh</td>
-                    <td>6.1814 g</td>
-                    <td><span class="status-badge">VERIFIED_SUSTAINABLE</span></td>
+                    <td><span class="badge">VERIFIED_SUSTAINABLE</span></td>
                 </tr>
                 <tr>
                     <td>#09</td>
                     <td>2026-10-03T20:15:00Z</td>
                     <td>82.2%</td>
                     <td>13.152 Wh</td>
-                    <td>6.1814 g</td>
-                    <td><span class="status-badge">VERIFIED</span></td>
+                    <td><span class="badge">VERIFIED</span></td>
                 </tr>
                 <tr>
                     <td>#08</td>
                     <td>2026-10-03T18:00:00Z</td>
                     <td>82.2%</td>
                     <td>13.152 Wh</td>
-                    <td>6.1814 g</td>
-                    <td><span class="status-badge">VERIFIED</span></td>
-                </tr>
-                <tr>
-                    <td>#07</td>
-                    <td>2026-10-03T16:30:00Z</td>
-                    <td>82.2%</td>
-                    <td>13.152 Wh</td>
-                    <td>6.1814 g</td>
-                    <td><span class="status-badge">VERIFIED</span></td>
-                </tr>
-                <tr>
-                    <td>#06</td>
-                    <td>2026-10-03T14:10:00Z</td>
-                    <td>82.2%</td>
-                    <td>13.152 Wh</td>
-                    <td>6.1814 g</td>
-                    <td><span class="status-badge">VERIFIED</span></td>
+                    <td><span class="badge">VERIFIED</span></td>
                 </tr>
             </tbody>
         </table>
+
+        <div class="footer">
+            &copy; 2026 GreenNet-Mobile Research Project. Hosted on business83.
+        </div>
     </div>
+
+    <script src="audit.js"></script>
 </body>
 </html>
