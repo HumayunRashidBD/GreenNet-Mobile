@@ -5,45 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenNet-Mobile | Live Telemetry & Device Audit Portal</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 20px; }
-        .container { max-width: 900px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
-        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
-        h1 { color: #38bdf8; font-size: 1.8rem; margin-bottom: 5px; }
-        p.subtitle { color: #94a3b8; margin-top: 0; }
-        .audit-btn { background: #38bdf8; color: #0f172a; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; margin-top: 15px; }
-        .audit-btn:hover { background: #7dd3fc; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
-        th { background: #0f172a; color: #38bdf8; }
-        .badge { background: #065f46; color: #34d399; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif; 
+            background: #000000; 
+            color: #f5f5f7; 
+            margin: 0; 
+            padding: 40px 20px; 
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { 
+            max-width: 880px; 
+            margin: 0 auto; 
+            background: #0a0a0c; 
+            padding: 40px; 
+            border-radius: 20px; 
+            border: 1px solid #222226; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.8); 
+        }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        h1 { color: #ffffff; font-size: 2.2rem; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 6px; }
+        p.subtitle { color: #86868b; font-size: 1.05rem; font-weight: 400; margin-top: 0; letter-spacing: -0.01em; }
+        
+        /* Apple-style Pill Button */
+        .audit-btn { 
+            background: #ffffff; 
+            color: #000000; 
+            border: none; 
+            padding: 14px 28px; 
+            font-size: 0.95rem; 
+            font-weight: 500; 
+            border-radius: 980px; 
+            cursor: pointer; 
+            transition: all 0.2s ease; 
+            margin-top: 20px; 
+            letter-spacing: -0.01em;
+        }
+        .audit-btn:hover { background: #e0e0e2; transform: scale(1.01); }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+        th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #1c1c1e; font-size: 0.95rem; }
+        th { background: #000000; color: #86868b; font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        td { color: #f5f5f7; }
+        
+        /* Monochrome Status Badge */
+        .badge { 
+            background: transparent; 
+            color: #ffffff; 
+            border: 1px solid #52525b; 
+            padding: 4px 10px; 
+            border-radius: 999px; 
+            font-size: 0.75rem; 
+            font-weight: 500; 
+            letter-spacing: 0.05em;
+        }
         
         /* Footer & Tooltip Styling */
-        .footer { margin-top: 40px; text-align: center; color: #64748b; font-size: 0.9rem; border-top: 1px solid #334155; padding-top: 20px; line-height: 1.6; }
-        .footer-project { color: #94a3b8; font-weight: 600; letter-spacing: 0.5px; }
-        .tooltip-container { position: relative; display: inline-block; cursor: pointer; color: #38bdf8; font-weight: 500; }
+        .footer { margin-top: 50px; text-align: center; color: #86868b; font-size: 0.85rem; border-top: 1px solid #1c1c1e; padding-top: 25px; line-height: 1.8; }
+        .footer-project { color: #f5f5f7; font-weight: 500; font-size: 0.95rem; letter-spacing: -0.01em; }
+        .tooltip-container { position: relative; display: inline-block; cursor: pointer; color: #ffffff; font-weight: 500; border-bottom: 1px dotted #86868b; }
         .tooltip-container .tooltip-text {
             visibility: hidden;
             width: 320px;
-            background-color: #0f172a;
-            color: #f8fafc;
+            background-color: #1c1c1e;
+            color: #f5f5f7;
             text-align: center;
-            border-radius: 6px;
-            padding: 8px 12px;
+            border-radius: 10px;
+            padding: 10px 14px;
             position: absolute;
             z-index: 1;
-            bottom: 125%;
+            bottom: 135%;
             left: 50%;
             transform: translateX(-50%);
             opacity: 0;
-            transition: opacity 0.3s;
-            border: 1px solid #38bdf8;
+            transition: opacity 0.3s ease;
+            border: 1px solid #3a3a3c;
             font-size: 0.85rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
         }
         .tooltip-container:hover .tooltip-text { visibility: visible; opacity: 1; }
 
-        /* Google Translate Widget Styling Customization */
-        .goog-te-combo { background: #0f172a; color: #38bdf8; border: 1px solid #334155; padding: 6px; border-radius: 4px; font-family: inherit; }
+        /* Google Translate Widget Monochromatic Customization */
+        .goog-te-combo { background: #1c1c1e; color: #f5f5f7; border: 1px solid #3a3a3c; padding: 8px 12px; border-radius: 8px; font-family: inherit; font-size: 0.9rem; outline: none; }
         .goog-logo-link { display: none !important; }
         .goog-te-gadget { color: transparent !important; }
     </style>
@@ -55,21 +97,21 @@
                 <h1>GreenNet-Mobile</h1>
                 <p class="subtitle">Eco-Friendly Interface Selection & Memory-Efficient Architecture</p>
             </div>
-            <!-- Tap2Translate Widget Container -->
+            <!-- Translate Widget Container -->
             <div id="google_translate_element"></div>
         </div>
         
-        <hr style="border-color: #334155; margin: 20px 0;">
+        <hr style="border-color: #1c1c1e; margin: 30px 0;">
 
         <!-- Interactive Audit Section -->
-        <div style="background: #0f172a; padding: 20px; border-radius: 8px; border: 1px dashed #38bdf8;">
-            <h3 style="margin-top: 0; color: #38bdf8;">📱 Interactive Device Energy Audit ($P_i$)</h3>
-            <p style="color: #94a3b8; font-size: 0.95rem;">Curious how much battery and energy your specific smartphone could save with our zero-GPS framework? Click below to run a live heuristic diagnostic scan on your current device.</p>
-            <button class="audit-btn" onclick="runDeviceAudit()">🚀 Run Live Device Energy Audit</button>
+        <div style="background: #121214; padding: 24px; border-radius: 14px; border: 1px solid #222226;">
+            <h3 style="margin-top: 0; color: #ffffff; font-size: 1.2rem; font-weight: 500;">Interactive Device Energy Audit ($P_i$)</h3>
+            <p style="color: #86868b; font-size: 0.95rem; line-height: 1.5;">Evaluate real-time battery preservation and hardware efficiency on your device using our zero-GPS heuristic framework.</p>
+            <button class="audit-btn" onclick="runDeviceAudit()">Run Live Device Energy Audit</button>
             <div id="audit-results"></div>
         </div>
 
-        <h3 style="margin-top: 30px;">Historical Verification Runs</h3>
+        <h3 style="margin-top: 40px; color: #ffffff; font-size: 1.2rem; font-weight: 500;">Historical Verification Runs</h3>
         <table>
             <thead>
                 <tr>
@@ -86,7 +128,7 @@
                     <td>2026-10-03T22:19:50Z</td>
                     <td>82.2%</td>
                     <td>13.152 Wh</td>
-                    <td><span class="badge">VERIFIED_SUSTAINABLE</span></td>
+                    <td><span class="badge">VERIFIED</span></td>
                 </tr>
                 <tr>
                     <td>#09</td>
