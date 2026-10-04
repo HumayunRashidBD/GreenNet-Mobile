@@ -1,0 +1,38 @@
+{
+    "generated_at": "2026-10-04T00:03:17.488665Z",
+    "author": "Humayun Rashid (Research Fellow, Islamic University, Kushtia, Bangladesh)",
+    "metrics_summary": {
+        "average_energy_reduction_pct": 82.2,
+        "baseline_current_ma": 180,
+        "optimized_current_ma": 32,
+        "energy_saved_24h_wh": 13.152,
+        "co2_offset_grams": 6.1814,
+        "flash_wear_eliminated": true
+    },
+    "historical_runs": [
+        {
+            "run": 10,
+            "timestamp": "2026-10-03T22:19:50Z",
+            "reduction": "82.2%",
+            "status": "VERIFIED_SUSTAINABLE"
+        },
+        {
+            "run": 9,
+            "timestamp": "2026-10-03T20:15:00Z",
+            "reduction": "82.2%",
+            "status": "VERIFIED"
+        },
+        {
+            "run": 8,
+            "timestamp": "2026-10-03T18:00:00Z",
+            "reduction": "82.2%",
+            "status": "VERIFIED"
+        },
+        {
+            "run": 7,
+            "timestamp": "2026-10-03T16:30:00Z",
+            "reduction": "82.2%",
+            "status": "VERIFIED"
+        }
+    ]
+}

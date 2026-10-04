@@ -1,0 +1,711 @@
+{
+    "summary": {
+        "timestamp": "2026-10-03T23:57:22.820814Z",
+        "total_iterations": 100,
+        "stable_decision_percentage": 25.0,
+        "estimated_current_reduction_avg": "82.2%",
+        "status": "STRESS_TEST_PASSED"
+    },
+    "logs": [
+        {
+            "test_run": 1,
+            "rssi_dbm": -74,
+            "velocity_kmh": 66.58,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 2,
+            "rssi_dbm": -87,
+            "velocity_kmh": 4.5,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 3,
+            "rssi_dbm": -69,
+            "velocity_kmh": 76.2,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 4,
+            "rssi_dbm": -94,
+            "velocity_kmh": 114.98,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 5,
+            "rssi_dbm": -106,
+            "velocity_kmh": 31.07,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 6,
+            "rssi_dbm": -62,
+            "velocity_kmh": 1.88,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 7,
+            "rssi_dbm": -101,
+            "velocity_kmh": 31.81,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 8,
+            "rssi_dbm": -70,
+            "velocity_kmh": 52.46,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 9,
+            "rssi_dbm": -85,
+            "velocity_kmh": 109.83,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 10,
+            "rssi_dbm": -80,
+            "velocity_kmh": 85.81,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 11,
+            "rssi_dbm": -107,
+            "velocity_kmh": 94.69,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 12,
+            "rssi_dbm": -56,
+            "velocity_kmh": 46.86,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 13,
+            "rssi_dbm": -106,
+            "velocity_kmh": 20.02,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 14,
+            "rssi_dbm": -72,
+            "velocity_kmh": 21.82,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 15,
+            "rssi_dbm": -83,
+            "velocity_kmh": 40.98,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 16,
+            "rssi_dbm": -96,
+            "velocity_kmh": 114.81,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 17,
+            "rssi_dbm": -106,
+            "velocity_kmh": 34.24,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 18,
+            "rssi_dbm": -106,
+            "velocity_kmh": 31.31,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 19,
+            "rssi_dbm": -80,
+            "velocity_kmh": 44.38,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 20,
+            "rssi_dbm": -59,
+            "velocity_kmh": 61.75,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 21,
+            "rssi_dbm": -64,
+            "velocity_kmh": 32.48,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 22,
+            "rssi_dbm": -54,
+            "velocity_kmh": 116.93,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 23,
+            "rssi_dbm": -62,
+            "velocity_kmh": 20.02,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 24,
+            "rssi_dbm": -80,
+            "velocity_kmh": 83.6,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 25,
+            "rssi_dbm": -90,
+            "velocity_kmh": 85.41,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 26,
+            "rssi_dbm": -85,
+            "velocity_kmh": 16.38,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 27,
+            "rssi_dbm": -71,
+            "velocity_kmh": 30.73,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 28,
+            "rssi_dbm": -57,
+            "velocity_kmh": 61.83,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 29,
+            "rssi_dbm": -88,
+            "velocity_kmh": 26.81,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 30,
+            "rssi_dbm": -91,
+            "velocity_kmh": 98.73,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 31,
+            "rssi_dbm": -68,
+            "velocity_kmh": 102.06,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 32,
+            "rssi_dbm": -81,
+            "velocity_kmh": 29.67,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 33,
+            "rssi_dbm": -96,
+            "velocity_kmh": 102.31,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 34,
+            "rssi_dbm": -97,
+            "velocity_kmh": 34.89,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 35,
+            "rssi_dbm": -96,
+            "velocity_kmh": 45.88,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 36,
+            "rssi_dbm": -74,
+            "velocity_kmh": 106.77,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 37,
+            "rssi_dbm": -68,
+            "velocity_kmh": 92.25,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 38,
+            "rssi_dbm": -77,
+            "velocity_kmh": 27.99,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 39,
+            "rssi_dbm": -105,
+            "velocity_kmh": 14.34,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 40,
+            "rssi_dbm": -108,
+            "velocity_kmh": 76.08,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 41,
+            "rssi_dbm": -75,
+            "velocity_kmh": 37.07,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 42,
+            "rssi_dbm": -110,
+            "velocity_kmh": 64.38,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 43,
+            "rssi_dbm": -85,
+            "velocity_kmh": 31.26,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 44,
+            "rssi_dbm": -70,
+            "velocity_kmh": 89.96,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 45,
+            "rssi_dbm": -52,
+            "velocity_kmh": 67.41,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 46,
+            "rssi_dbm": -98,
+            "velocity_kmh": 17.83,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 47,
+            "rssi_dbm": -84,
+            "velocity_kmh": 71.14,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 48,
+            "rssi_dbm": -67,
+            "velocity_kmh": 103.09,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 49,
+            "rssi_dbm": -82,
+            "velocity_kmh": 47.82,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 50,
+            "rssi_dbm": -71,
+            "velocity_kmh": 80.92,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 51,
+            "rssi_dbm": -110,
+            "velocity_kmh": 6.25,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 52,
+            "rssi_dbm": -69,
+            "velocity_kmh": 70.07,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 53,
+            "rssi_dbm": -64,
+            "velocity_kmh": 41.63,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 54,
+            "rssi_dbm": -81,
+            "velocity_kmh": 87.04,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 55,
+            "rssi_dbm": -95,
+            "velocity_kmh": 43.77,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 56,
+            "rssi_dbm": -78,
+            "velocity_kmh": 77.14,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 57,
+            "rssi_dbm": -79,
+            "velocity_kmh": 3.73,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 58,
+            "rssi_dbm": -77,
+            "velocity_kmh": 37.47,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 59,
+            "rssi_dbm": -77,
+            "velocity_kmh": 70.09,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 60,
+            "rssi_dbm": -103,
+            "velocity_kmh": 98.17,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 61,
+            "rssi_dbm": -66,
+            "velocity_kmh": 43.65,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 62,
+            "rssi_dbm": -66,
+            "velocity_kmh": 44.86,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 63,
+            "rssi_dbm": -53,
+            "velocity_kmh": 27.06,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 64,
+            "rssi_dbm": -59,
+            "velocity_kmh": 19.7,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 65,
+            "rssi_dbm": -86,
+            "velocity_kmh": 50.77,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 66,
+            "rssi_dbm": -63,
+            "velocity_kmh": 98.6,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 67,
+            "rssi_dbm": -55,
+            "velocity_kmh": 104.5,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 68,
+            "rssi_dbm": -77,
+            "velocity_kmh": 69.74,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 69,
+            "rssi_dbm": -77,
+            "velocity_kmh": 32.91,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 70,
+            "rssi_dbm": -93,
+            "velocity_kmh": 95.56,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 71,
+            "rssi_dbm": -87,
+            "velocity_kmh": 60.52,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 72,
+            "rssi_dbm": -62,
+            "velocity_kmh": 78.81,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 73,
+            "rssi_dbm": -75,
+            "velocity_kmh": 30.13,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 74,
+            "rssi_dbm": -103,
+            "velocity_kmh": 92.01,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 75,
+            "rssi_dbm": -78,
+            "velocity_kmh": 107.12,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 76,
+            "rssi_dbm": -107,
+            "velocity_kmh": 56.99,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 77,
+            "rssi_dbm": -58,
+            "velocity_kmh": 5.69,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 78,
+            "rssi_dbm": -92,
+            "velocity_kmh": 65.56,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 79,
+            "rssi_dbm": -57,
+            "velocity_kmh": 63.71,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 80,
+            "rssi_dbm": -60,
+            "velocity_kmh": 48.55,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 81,
+            "rssi_dbm": -54,
+            "velocity_kmh": 61.64,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 82,
+            "rssi_dbm": -58,
+            "velocity_kmh": 51.41,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 83,
+            "rssi_dbm": -50,
+            "velocity_kmh": 65.35,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 84,
+            "rssi_dbm": -78,
+            "velocity_kmh": 73.59,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 85,
+            "rssi_dbm": -72,
+            "velocity_kmh": 12.61,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 86,
+            "rssi_dbm": -66,
+            "velocity_kmh": 110.16,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 87,
+            "rssi_dbm": -97,
+            "velocity_kmh": 40.38,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 88,
+            "rssi_dbm": -88,
+            "velocity_kmh": 105.54,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 89,
+            "rssi_dbm": -103,
+            "velocity_kmh": 25.23,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 90,
+            "rssi_dbm": -56,
+            "velocity_kmh": 92.32,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 91,
+            "rssi_dbm": -89,
+            "velocity_kmh": 67.53,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 92,
+            "rssi_dbm": -102,
+            "velocity_kmh": 74.19,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 93,
+            "rssi_dbm": -52,
+            "velocity_kmh": 70.77,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 94,
+            "rssi_dbm": -70,
+            "velocity_kmh": 34.28,
+            "state": "OPTIMIZED_ZERO_GPS_STABLE",
+            "current_draw_ma": 32
+        },
+        {
+            "test_run": 95,
+            "rssi_dbm": -50,
+            "velocity_kmh": 70.8,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 96,
+            "rssi_dbm": -104,
+            "velocity_kmh": 28.96,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 97,
+            "rssi_dbm": -64,
+            "velocity_kmh": 60.0,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 98,
+            "rssi_dbm": -98,
+            "velocity_kmh": 11.92,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 99,
+            "rssi_dbm": -87,
+            "velocity_kmh": 94.99,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        },
+        {
+            "test_run": 100,
+            "rssi_dbm": -54,
+            "velocity_kmh": 108.86,
+            "state": "TURBULENT_FALLBACK_ACTIVE",
+            "current_draw_ma": 180
+        }
+    ]
+}
