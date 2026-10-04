@@ -1,0 +1,18 @@
+{
+    "certificate_id": "GNM-ESG-1791088268",
+    "issued_at": "2026-10-04T00:31:08.901628Z",
+    "issuer": {
+        "name": "Humayun Rashid",
+        "title": "Research Fellow",
+        "affiliation": "Islamic University, Kushtia, Bangladesh"
+    },
+    "beneficiary": "Global Fleet Operator #01",
+    "metrics": {
+        "algorithm": "Zero-GPS Proximity Index ($P_i$) Framework",
+        "memory_architecture": "POSIX mlock (Zero Flash Wear)",
+        "daily_energy_saved_kwh": 2.19,
+        "daily_co2_offset_kg": 1.04,
+        "compliance_standard": "ISO/IEC 14040 Life Cycle Assessment Compatible"
+    },
+    "verification_status": "OFFICIALLY_VERIFIED_SUSTAINABLE"
+}
